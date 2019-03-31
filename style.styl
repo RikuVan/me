@@ -5,6 +5,7 @@ bg = #1d1d1d
 accent-yellow = #fbb829
 accent-cyan = rgb(67, 244, 253)
 accent-magenta = rgb(253, 65, 195)
+accent-green = #5ff967
 text = #FFF
 font-stack = "Overpass Mono", Monaco, Consolas, monospace;
 padding = 75px;
@@ -51,9 +52,25 @@ a {
     color: accent;
 }
 
+em[itemprop="child"] {
+   color: accent-magenta;
+}
+
+em[itemprop="language"] {
+   color: accent-yellow;
+}
+
+em[itemprop="interest"] {
+   color: accent-green;
+}
+
 em {
     color: #FFF;
     font-style: normal;
+}
+
+.key-value-pair {
+    opacity: 0;
 }
 
 // Address styling not present in IE 8/9.
@@ -79,7 +96,7 @@ pre {
 
 html,
 body {
-    color: darken(text, 20%);
+    color: darken(text, 30%);
     line-height: 1.3;
     height: 100%;
 
@@ -153,7 +170,7 @@ h2 {
     }
 }
 
-header {
+main {
     background: url('/rick.jpg') center right/cover no-repeat;
     align-items: flex-start;
     display: flex;
@@ -168,9 +185,9 @@ header {
     &::after {
         background: linear-gradient(
             to right,
-            rgba(#000, 0.8) 0%,
-            rgba(#000, 0.6) 50%,
-            transparent 100%
+            rgba(#000, 0.95) 0%,
+            rgba(#000, 0.5) 70%,
+            rgba(#000, 0.1) 100%
         );
         content: '';
         position: absolute;
@@ -218,6 +235,10 @@ pre {
 pre code {
     background: 0;
     padding: 0;
+
+    .bracket {
+        opacity: 0
+    }
 }
 
 // Global classes + helpers
@@ -235,11 +256,15 @@ list-spacing = 3em
         display: none;
     }
 
+    .bracket {
+        margin-left: -15px;
+    }
+
     a {
         border: none !important;
     }
 
-    header {
+    main {
         font-size: 14px;
         padding: 10vw;
 

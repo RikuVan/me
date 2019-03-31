@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Overpass+Mono:400,700" />
   <link rel="stylesheet" href="style.styl" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WRBVMJW"></script>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-WRBVMJW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -40,50 +40,56 @@
     }
     gtag('js', new Date());
     gtag('config', 'GTM-WRBVMJW');
-  </script>
+  </script>-->
 </head>
 
 <body>
-  <header>
+  <script src="./index.js"></script>
+ <main>
     <pre itemscope itemtype="http://schema.org/Person">
       <code>
-          <span class="media-not-small">{</span>
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"name": "<em itemprop="name">Richard Van Camp</em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"jobTitle": "<em itemprop="jobTitle">Web Developer</em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"homeLocation": "<em itemprop="homeLocation">Tampere, FI</em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"worksFor": "<em itemprop="worksFor"><a href="https://gofore.com" itemprop="url"><span itemprop="name">Gofore</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"affiliation": "<em itemprop="affiliation"><a href="https://webdevandsausages.org" itemprop="url"><span itemprop="name">Web Dev & Sausages</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"alumniOf": [
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.tuni.fi/en" itemprop="url"><span itemprop="name">Tampere University of Technology</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.aalto.fi" itemprop="url"><span itemprop="name">Aalto University</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.jyu.fi/en/" itemprop="url"><span itemprop="name">University of Jyväskylä</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.jamk.fi/en/Home/" itemprop="url"><span itemprop="name">Jyväskylä University of Applied Sciences</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="http://www.jejunu.ac.kr/eng/" itemprop="url"><span itemprop="name">Jeju National University</span></a></em>"
+          <span class="bracket">{</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"name": "<em id="detail-1" itemprop="name">Richard Van Camp</em>",</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"jobTitle": "<em  id="detail-2" itemprop="jobTitle">Web Developer</em>",</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"homeLocation": "<em  id="detail-3" itemprop="homeLocation">Tampere, FI</em>",</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"worksFor": "<em itemprop="worksFor"><a href="https://gofore.com" itemprop="url"><span itemprop="name">Gofore</span></a></em>",</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"affiliation": "<em itemprop="affiliation"><a href="https://webdevandsausages.org" itemprop="url"><span itemprop="name">Web Dev & Sausages</span></a></em>",</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"alumniOf": [
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.tuni.fi/en" itemprop="url"><span itemprop="name">TUT</span></a></em>",
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.aalto.fi" itemprop="url"><span itemprop="name">Aalto</span></a></em>",
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.jyu.fi/en/" itemprop="url"><span itemprop="name">JYU</span></a></em>",
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.jamk.fi/en/Home/" itemprop="url"><span itemprop="name">JAMK</span></a></em>",
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="http://www.jejunu.ac.kr/eng/" itemprop="url"><span itemprop="name">Jeju NU</span></a></em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.middlebury.edu/institute/" itemprop="url"><span itemprop="name">MIIS</span></a></em>"      
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.berkeley.edu/" itemprop="url"><span itemprop="name">University of California</span></a></em>"      
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"interests": [
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization"><a href="https://www.berkeley.edu/" itemprop="url"><span itemprop="name">UC Berkeley</span></a></em>"      
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"interests": [
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">user experience</em>",
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">visual design</em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">code quality</em>",
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">functional programming</em>",
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">teaching</em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">user experience</em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">visual design</em>"
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"image": "<em itemprop="image"><a href="https://secure.gravatar.com/avatar/a7e3c6d11362c710095c21b6074d8894" itemprop="url"><span itemprop="url">https://secure.gravatar.com/avatar/a7e3c6d11362c710095c21b6074d8894</span></a></em>",
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"knowsLanguage": [
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="interest">learning content</em>",    
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"knowsLanguage": [
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">English</em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Finnish</em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Korean</em>"
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"children": [
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Javascript</em>"
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Typescript</em>"
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Kotlin</em>"
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Java</em>"
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="language">Elixir</em>"
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],</span>
+          <span class="key-value-pair"><span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>"children": [
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="child" itemscope itemtype="http://schema.org/Person">Marilla</em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="child" itemscope itemtype="http://schema.org/Person">Loretta</em>"
           <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;"<em itemprop="child" itemscope itemtype="http://schema.org/Person">Milo</em>"
-          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],
-          <span class="media-not-small">}</span>
+          <span class="media-not-small">&nbsp;&nbsp;&nbsp;&nbsp;</span>],</span>
+          <span class="bracket">}</span>
       </code>
     </pre>
-  </header>
+  </main>
 </body>
 
 </html>
