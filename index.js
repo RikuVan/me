@@ -1,6 +1,17 @@
-import { TimelineMax } from 'gsap'
+import { TimelineMax, TweenLight } from 'gsap'
 
-window.onload = animateInPersonData
+const BACKGROUND_IMG = './rick.jpg'
+
+window.onload = function() {
+  return loadImg(BACKGROUND_IMG)
+    .then(({ path }) => {
+      const main = document.getElementById('main')
+      TweenMax.to(main, 0, { className: 'background' })
+    })
+    .finally(() => {
+      animateInPersonData()
+    })
+}
 
 function animateInPersonData() {
   const codeChildren = [...document.querySelectorAll('.key-value-pair')]
@@ -17,4 +28,13 @@ function animateInPersonData() {
       color: 'hsl(0, 0%, 55%)',
       fontWeight: 'normal'
     })
+}
+
+function loadImg(path) {
+  return new Promise(resolve => {
+    const img = new Image()
+    img.onload = () => resolve({ path, status: 'ok' })
+    img.onerror = () => resolve({ path, status: 'error' })
+    img.src = path
+  })
 }

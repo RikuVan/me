@@ -170,24 +170,22 @@ h2 {
     }
 }
 
-main {
-    background: url('/rick.jpg') center right/cover no-repeat;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    min-height: 100vh;
-    overflow: hidden;
-    padding-top: 3rem;
-    padding-left: padding;
-    position: relative;
+.background {
+    background: url('./rick.jpg') center right/cover no-repeat;
 
     &::after {
         background: linear-gradient(
             to right,
             rgba(#000, 0.95) 0%,
-            rgba(#000, 0.5) 70%,
-            rgba(#000, 0.1) 100%
+            rgba(#000, 0.85) 20%,
+            rgba(#000, 0.4) 40%,
+            rgba(#000, 0.2) 100%
+        ), linear-gradient(
+            to left,
+            rgba(#000, 0.95) 0%,
+            rgba(#000, 0.85) 20%,
+            rgba(#000, 0.4) 40%,
+            rgba(#000, 0.2) 100%
         );
         content: '';
         position: absolute;
@@ -197,6 +195,18 @@ main {
         bottom: 0;
         z-index: 0;
     }
+}
+
+main {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 3rem;
+    padding-left: padding;
+    position: relative;
 
     > * {
         position: relative;
@@ -264,7 +274,7 @@ list-spacing = 3em
         border: none !important;
     }
 
-    main {
+    main, main.background {
         font-size: 14px;
         padding: 10vw;
 
