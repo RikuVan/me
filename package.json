@@ -10,11 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-stylus": "^2.12.0",
-    "parcel": "^2.12.0",
-    "stylus": "^0.63.0"
+    "@parcel/transformer-stylus": "^2.16.4",
+    "parcel": "^2.16.4",
+    "stylus": "^0.64.0"
   },
   "dependencies": {
-    "gsap": "^3.12.5"
+    "gsap": "^3.14.2"
   }
 }
