@@ -1,42 +1,46 @@
-import gsap from 'gsap'
+import gsap from "gsap";
 
-const BACKGROUND_IMG = './rick.jpg'
+const BACKGROUND_IMG = "./rick.jpg";
 
 window.onload = function () {
   return loadImg(BACKGROUND_IMG)
     .then(({ path }) => {
-      const main = document.getElementById('main')
-      gsap.to(main, 0, { className: 'background' })
+      const main = document.getElementById("main");
+      gsap.to(main, 0, { className: "background" });
     })
     .finally(() => {
-      animateInPersonData()
-    })
-}
+      animateInPersonData();
+    });
+};
 
 function animateInPersonData() {
-  const codeChildren = [...document.querySelectorAll('.key-value-pair')]
-  const brackets = document.querySelectorAll('.bracket')
-  const tl = gsap.timeline({ repeat: 0 })
-  tl.fromTo(codeChildren, { opacity: 0 }, { opacity: 1, duration: 2, stagger: 0.1 })
+  const codeChildren = [...document.querySelectorAll(".key-value-pair")];
+  const brackets = document.querySelectorAll(".bracket");
+  const tl = gsap.timeline({ repeat: 0 });
+  tl.fromTo(
+    codeChildren,
+    { opacity: 0 },
+    { opacity: 1, duration: 2, stagger: 0.1 },
+  )
     .to(brackets, {
       opacity: 1,
-      color: 'white',
-      fontWeight: 'bold',
+      color: "white",
+      fontWeight: "bold",
       duration: 0,
     })
     .to(brackets, {
       opacity: 1,
-      color: 'hsl(0, 0%, 55%)',
-      fontWeight: 'normal',
+      color: "hsl(0, 0%, 55%)",
+      fontWeight: "normal",
       duration: 1,
-    })
+    });
 }
 
 function loadImg(path) {
   return new Promise((resolve) => {
-    const img = new Image()
-    img.onload = () => resolve({ path, status: 'ok' })
-    img.onerror = () => resolve({ path, status: 'error' })
-    img.src = path
-  })
+    const img = new Image();
+    img.onload = () => resolve({ path, status: "ok" });
+    img.onerror = () => resolve({ path, status: "error" });
+    img.src = path;
+  });
 }
